@@ -3,6 +3,9 @@
 # A very simple paired read simulator using stand-alone
 # python2, i.e. no third-party modules.
 
+# Author Robert C. Edgar
+# email robert@drive5.com
+
 # "Mutates" template sequence(s) from a FASTA file,
 # introducing substitions only.
 # Sequences are selected with the input with uniform
@@ -16,12 +19,8 @@
 # which causes the number of mutations per read to vary
 # stochastically.
 
-# Author Robert C. Edgar
-# email robert@drive5.com
-
 import sys
 import random
-import string
 
 # Positional parameters specified on the command line.
 FastaFileName = sys.argv[1]
