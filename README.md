@@ -2,7 +2,7 @@
 
 A very simple paired read simulator using stand-alone python2, i.e. no third-party modules.
 
-"Mutates" template sequence(s) from a FASTA file, introducing substitions only.
+"Mutates" template sequence(s) from a FASTA file, introducing substitutions only. These mutations could be a simple model of sequencing error and/or variants in the target sequence.
 
 Sequences are selected with the input with uniform probability (i.e., not weighted by length).
 
