@@ -1,10 +1,7 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 
 # A very simple paired read simulator using stand-alone
-# python2, i.e. no third-party modules.
-
-# Author Robert C. Edgar
-# email robert@drive5.com
+# python3, i.e. no third-party modules.
 
 # "Mutates" template sequence(s) from a FASTA file,
 # introducing substitions only.
@@ -18,6 +15,9 @@
 # most simulators which have a per-base mutation probability
 # which causes the number of mutations per read to vary
 # stochastically.
+
+# Author Robert C. Edgar
+# email robert@drive5.com
 
 import sys
 import random
@@ -164,15 +164,15 @@ for ReadIndex in range(0, ReadCount):
 		assert len(R1Seq) == ReadLength
 		assert len(R2Seq) == ReadLength
 
-		print >> fR1, ReadLabel + " 1"
-		print >> fR2, ReadLabel + " 2"
+		print(ReadLabel + " 1", file=fR1)
+		print(ReadLabel + " 2", file=fR2)
 
-		print >> fR1, R1Seq
-		print >> fR2, R2Seq
+		print(R1Seq, file=fR1)
+		print(R2Seq, file=fR2)
 
-		print >> fR1, "+"
-		print >> fR2, "+"
+		print("+", file=fR1)
+		print("+", file=fR2)
 
-		print >> fR1, Quals
-		print >> fR2, Quals
+		print(Quals, file=fR1)
+		print(Quals, file=fR2)
 		break
