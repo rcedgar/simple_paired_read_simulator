@@ -1,6 +1,6 @@
 # simple_paired_read_simulator.py
 
-A very simple paired read simulator using stand-alone python2, i.e. no third-party modules.
+A very simple paired read simulator using stand-alone python3, i.e. no third-party modules.
 
 "Mutates" template sequence(s) from a FASTA file, introducing substitutions only. These mutations could be a simple model of sequencing error and/or variants in the target sequence.
 
